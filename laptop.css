@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...} */
+
+
+
+.teste{width: 100%;
+       height: 800px;}
+
+@media (min-width: 1280px) {
+    .overflow-xl-auto {
+      overflow: auto;
+    }
+  }
+
+  
+
+  @media screen and (max-width:1280px) and (orientation:portrait) {
+
+    .teste{background: red;}/*orientation retrato*/
+
+    .teste{background-image: url(image/BG-02-G.jpg);}
+
+    h1{font-size: 3vw;
+        color: white;
+        margin-left: 10px;
+        font-variant: small-caps;}
+
+        p{font-size: 2vw;
+            color:white;}
+    
+}
+
+@media screen and (max-width:1280px) and (orientation:landscape){
+
+    .teste{background:green;}/*orientation paisagem*/
+
+   .teste {background-image: url(image/BG-02-G.jpg);  }
+
+   h1{font-size: 3vw;
+    color: white;
+    margin-left: 10px;
+    font-variant: small-caps;}
+
+    p{font-size: 2vw;
+        color:white;}
+
+   
+}

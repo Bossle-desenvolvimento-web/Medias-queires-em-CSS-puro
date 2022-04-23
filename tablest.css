@@ -1,0 +1,61 @@
+
+@charset "utf-8";
+
+
+.teste{width: 100%;
+        height: 800px;}
+
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {...}*/
+
+@media (min-width: 768px) {
+    .overflow-md-auto {
+      overflow: auto;
+    }
+}
+
+@media screen and (max-width:768px) and (orientation:portrait) {
+
+   .teste{background: gray;}/*orientation retrato*/
+
+   .teste{background-image: url(image/BG-03-M.jpg);}
+    
+}
+
+@media screen and (max-width:800px) and (orientation:landscape){
+
+   .teste{background:black;}/*orientation paisagem*/
+
+   .teste{background-image: url(image/BG-03-M.jpg);}
+}
+
+@media screen and (max-width:800px) and (orientation:portrait) {
+
+    .teste{background: yellow;}/*orientation retrato*/
+
+    .teste{background-image: url(image/BG-01-P.jpg);}
+
+    h1{font-size: 8vw;
+        color: red;
+        margin-left: 10px;
+        font-variant: small-caps;}
+
+        p{font-size: 5vw;
+            color:white;}
+    
+}
+
+@media screen and (max-width:800px) and (orientation:landscape){
+
+    .teste{background:rebeccapurple;}/*orientation paisagem*/
+
+    .teste{background-image: url(image/BG-01-P.jpg);}
+
+    h1{font-size: 8vw;
+       color: red;
+       margin-left: 10px;
+       font-variant: small-caps;}
+
+       p{font-size: 5vw;
+         color:white;}
+}
